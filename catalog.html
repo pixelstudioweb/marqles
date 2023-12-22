@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        type="text/javascript"></script>
+    <link rel="stylesheet" href="https://snipp.ru/cdn/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__nav-menu">
+                    <div class="header__logo_wrapper">
+                        <a class="header__logo" href="#">
+                            <img class="logo__desctop" src="img/logo.svg" alt="logo">
+                            <img class="logo__mobile" src="img/logo_mobile.svg" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="catalog.html" class="menu__link"><img src="img/catalog.svg" alt="Каталог"
+                                    class="menu__img"><span>Каталог</span></a></li>
+                        <li class="menu__item"><a href="index.html" class="menu__link"><img src="img/home.svg" alt="Главная"
+                                    class="menu__img"><span>Главная</span></a></li>
+                        <li class="menu__item"><a href="husky.html" class="menu__link"><img src="img/husky_ico.svg" alt="Хаски"
+                            class="menu__img"><span>Хаски</span></a></li>
+                        <li class="menu__item"><a href="about.html" class="menu__link"><img src="img/about.svg" alt="О нас"
+                                    class="menu__img"><span>О нас</span></a></li>
+                        <li class="menu__item"><a href="question.html" class="menu__link"><img src="img/question.svg" alt="ЧаВо"
+                                    class="menu__img"><span>ЧаВо</span></a></li>
+                        <li class="menu__item_right"><a href="favourites.html" class="menu__link_right"><img src="img/like.svg"
+                                    alt="like" class="menu__img"></a></li>
+                        <li class="menu__item_right"><a href="order.html" class="menu__link_right"><img src="img/cart.svg"
+                                    alt="cart" class="menu__img"></a></li>
+                        <li class="menu__item_right"><a href="#" class="menu__link_right"><img src="img/user.svg"
+                                    alt="user" class="menu__img"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="catalog">
+                <div class="catalog__container">
+                    <div class="catalog__header">
+                        <div class="catalog__headder__title">
+                            КАТАЛОГ
+                        </div>
+                        <div class="catalog__header__nav-menu">
+                            <ul class="product-categories__list">
+                                <li class="product-categories__item">
+                                    <div class="product-categories__img-wrapper">
+                                        <img src="img/category1.svg" alt="">
+                                    </div>
+                                    <div class="product-categories__text">
+                                        свитшоты
+                                    </div>
+                                </li>
+                                <li class="product-categories__item">
+                                    <div class="product-categories__img-wrapper">
+                                        <img src="img/category2.svg" alt="">
+                                    </div>
+                                    <div class="product-categories__text">
+                                        ХУДИ
+                                    </div>
+                                </li>
+                                <li class="product-categories__item">
+                                    <div class="product-categories__img-wrapper">
+                                        <img src="img/category3.svg" alt="">
+                                    </div>
+                                    <div class="product-categories__text">
+                                        ФУТБОЛКИ
+                                    </div>
+                                </li>
+                                <li class="product-categories__item">
+                                    <div class="product-categories__img-wrapper">
+                                        <img src="img/category4.svg" alt="">
+                                    </div>
+                                    <div class="product-categories__text">
+                                        МАЙКИ
+                                    </div>
+                                </li>
+                                <li class="product-categories__item">
+                                    <div class="product-categories__img-wrapper">
+                                        <img src="img/category5.svg" alt="">
+                                    </div>
+                                    <div class="product-categories__text">
+                                        ШТАНЫ
+                                    </div>
+                                </li>
+                                <li class="product-categories__item">
+                                    <div class="product-categories__img-wrapper">
+                                        <img src="img/category6.svg" alt="">
+                                    </div>
+                                    <div class="product-categories__text">
+                                        ШОРТЫ
+                                    </div>
+                                </li>
+                                <li class="product-categories__item">
+                                    <div class="product-categories__img-wrapper">
+                                        <img src="img/category7.svg" alt="">
+                                    </div>
+                                    <div class="product-categories__text">
+                                        НОСКИ
+                                    </div>
+                                </li>
+                                <li class="product-categories__item">
+                                    <div class="product-categories__img-wrapper">
+                                        <img src="img/category8.svg" alt="">
+                                    </div>
+                                    <div class="product-categories__text">
+                                        МЕШОЧКИ
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog__main">
+
+
+                        <div class="product__list">
+                            <div class="catalog__filter">
+                                <div class="catalog__filter__header">
+                                    <div class="catalog__filter__title">
+                                        ФИЛЬТРЫ
+                                    </div>
+                                    <button id="show-block-button" href="">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.9993 16.6545V31.3073" stroke="#0D0711" stroke-width="3"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M31.3346 23.981H16.668" stroke="#0D0711" stroke-width="3"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M33.3714 4H14.6286C8.09524 4 4 8.62417 4 15.1703V32.8297C4 39.3758 8.07619 44 14.6286 44H33.3714C39.9238 44 44 39.3758 44 32.8297V15.1703C44 8.62417 39.9238 4 33.3714 4Z"
+                                                stroke="#0D0711" stroke-width="3" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="catalog__filter__content">
+                                    <div class="accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">Категория</div>
+                                            <div>
+                                                <div class="checkbox__wrapper">
+                                                    <input type="checkbox" class="custom-checkbox" id="happy7"
+                                                        name="happy7" value="yes">
+                                                    <label for="happy7">Худи</label>
+                                                    <input type="checkbox" class="custom-checkbox" id="happy8"
+                                                        name="happy8" value="yes">
+                                                    <label for="happy8">Свитшот</label>
+                                                    <input type="checkbox" class="custom-checkbox" id="happy9"
+                                                        name="happy9" value="yes">
+                                                    <label for="happy9">Футболки</label>
+                                                    <input type="checkbox" class="custom-checkbox" id="happy10"
+                                                        name="happy10" value="yes">
+                                                    <label for="happy10">Майки</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">Вид спорта</div>
+                                            <div>
+                                                <div class="checkbox__wrapper">
+                                                    <input type="checkbox" class="custom-checkbox" id="happy7"
+                                                        name="happy7" value="yes">
+                                                    <label for="happy7">Бег</label>
+                                                    <input type="checkbox" class="custom-checkbox" id="happy8"
+                                                        name="happy8" value="yes">
+                                                    <label for="happy8">Хокей</label>
+                                                    <input type="checkbox" class="custom-checkbox" id="happy9"
+                                                        name="happy9" value="yes">
+                                                    <label for="happy9">Тяжелая атлетика</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">Размер</div>
+                                            <div>
+                                                <div class="checkbox__wrapper">
+                                                    <input type="checkbox" class="custom-checkbox" id="happy4"
+                                                        name="happy4" value="yes">
+                                                    <label for="happy4">52</label>
+                                                    <input type="checkbox" class="custom-checkbox" id="happy5"
+                                                        name="happy5" value="yes">
+                                                    <label for="happy5">51</label>
+                                                    <input type="checkbox" class="custom-checkbox" id="happy6"
+                                                        name="happy6" value="yes">
+                                                    <label for="happy6">50</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">Цена</div>
+                                            <div>
+                                                <div id="slider"></div>
+                                                <div id="slider-range">
+                                                    <input type="text" id="min" value="5000">
+                                                    <input type="text" id="max" value="11000">
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">Цвет</div>
+                                            <div>
+                                                <div class="checkbox__wrapper">
+                                                    <input type="checkbox" class="custom-checkbox" id="happy"
+                                                        name="happy" value="yes">
+                                                    <label for="happy">Красный</label>
+                                                    <input type="checkbox" class="custom-checkbox" id="happy2"
+                                                        name="happy2" value="yes">
+                                                    <label for="happy2">Синий</label>
+                                                    <input type="checkbox" class="custom-checkbox" id="happy3"
+                                                        name="happy3" value="yes">
+                                                    <label for="happy3">Желтый</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <script>
+                                $(document).ready(function () {
+                                    let blockVisible = false; // Переменная для отслеживания видимости блока
+
+                                    $("#show-block-button").click(function () {
+                                        if (blockVisible) {
+                                            $(".catalog__filter__content").hide();
+                                            blockVisible = false;
+                                        } else {
+                                            $(".catalog__filter__content").show();
+                                            blockVisible = true;
+                                        }
+                                    });
+                                });
+                            </script>
+                            <a class="product__item" href="productcard.html">
+                                <div>
+                                    <div class="product__item__wrap">
+                                        <div class="product__image">
+                                            <img src="img/product1.png" alt="Продукт">
+                                        </div>
+                                        <div class="product__title">
+                                            Наименование карточки товара
+                                        </div>
+                                        <div class="product__article">
+                                            (Артикул товара)
+                                        </div>
+                                        <div class="product__price">
+                                            12 180 ₽
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="product__item" href="productcard.html">
+                                <div>
+                                    <div class="product__item__wrap">
+                                        <div class="product__image">
+                                            <img src="img/product2.png" alt="Продукт">
+                                        </div>
+                                        <div class="product__title">
+                                            Наименование карточки товара
+                                        </div>
+                                        <div class="product__article">
+                                            (Артикул товара)
+                                        </div>
+                                        <div class="product__price">
+                                            12 180 ₽
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="product__item" href="productcard.html">
+                                <div>
+                                    <div class="product__item__wrap">
+                                        <div class="product__image">
+                                            <img src="img/product3.png" alt="Продукт">
+                                        </div>
+                                        <div class="product__title">
+                                            Наименование карточки товара
+                                        </div>
+                                        <div class="product__article">
+                                            (Артикул товара)
+                                        </div>
+                                        <div class="product__price">
+                                            12 180 ₽
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="product__item" href="productcard.html">
+                                <div>
+                                    <div class="product__item__wrap">
+                                        <div class="product__image">
+                                            <img src="img/product4.png" alt="Продукт">
+                                        </div>
+                                        <div class="product__title">
+                                            Наименование карточки товара
+                                        </div>
+                                        <div class="product__article">
+                                            (Артикул товара)
+                                        </div>
+                                        <div class="product__price">
+                                            12 180 ₽
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="product__item" href="productcard.html">
+                                <div>
+                                    <div class="product__item__wrap">
+                                        <div class="product__image">
+                                            <img src="img/product1.png" alt="Продукт">
+                                        </div>
+                                        <div class="product__title">
+                                            Наименование карточки товара
+                                        </div>
+                                        <div class="product__article">
+                                            (Артикул товара)
+                                        </div>
+                                        <div class="product__price">
+                                            12 180 ₽
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>                            
+                            <a class="product__item" href="productcard.html">
+                                <div>
+                                    <div class="product__item__wrap">
+                                        <div class="product__image">
+                                            <img src="img/product2.png" alt="Продукт">
+                                        </div>
+                                        <div class="product__title">
+                                            Наименование карточки товара
+                                        </div>
+                                        <div class="product__article">
+                                            (Артикул товара)
+                                        </div>
+                                        <div class="product__price">
+                                            12 180 ₽
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>                            
+                            <a class="product__item" href="productcard.html">
+                                <div>
+                                    <div class="product__item__wrap">
+                                        <div class="product__image">
+                                            <img src="img/product3.png" alt="Продукт">
+                                        </div>
+                                        <div class="product__title">
+                                            Наименование карточки товара
+                                        </div>
+                                        <div class="product__article">
+                                            (Артикул товара)
+                                        </div>
+                                        <div class="product__price">
+                                            12 180 ₽
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>                            
+                            <a class="product__item" href="productcard.html">
+                                <div>
+                                    <div class="product__item__wrap">
+                                        <div class="product__image">
+                                            <img src="img/product4.png" alt="Продукт">
+                                        </div>
+                                        <div class="product__title">
+                                            Наименование карточки товара
+                                        </div>
+                                        <div class="product__article">
+                                            (Артикул товара)
+                                        </div>
+                                        <div class="product__price">
+                                            12 180 ₽
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>              
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-navigation">
+                <div class="footer-navigation__container">
+                    <div class="footer-navigation__nav-menu">
+                        <div class="footer-navigation__logo_wrapper">
+                            <a class="footer-navigation__logo" href="#">
+                                <img class="footer_logo__desctop" src="img/footer_logo.svg" alt="logo">
+                                <img class="footer_logo__mobile" src="img/logo_mobile.svg" alt="logo">
+                            </a>
+                        </div>
+                        <ul class="footer__menu__list">
+                            <li class="footer__menu__item"><a href="catalog.html" class="footer__menu__link"><img
+                                        src="img/catalog.svg" alt="Каталог"
+                                        class="footer__menu__img"><span>Каталог</span></a></li>
+                            <li class="footer__menu__item"><a href="index.html" class="footer__menu__link"><img
+                                        src="img/home.svg" alt="Главная"
+                                        class="footer__menu__img"><span>Главная</span></a></li>
+                            <li class="footer__menu__item"><a href="husky.html" class="footer__menu__link"><img
+                                        src="img/husky_ico.svg" alt="Хаски"
+                                        class="footer__menu__img"><span>Хаски</span></a></li>
+                            <li class="footer__menu__item"><a href="about.html" class="footer__menu__link"><img
+                                        src="img/about.svg" alt="О нас" class="footer__menu__img"><span>О нас</span></a>
+                            </li>
+                            <li class="footer__menu__item"><a href="question.html" class="footer__menu__link"><img
+                                        src="img/question.svg" alt="ЧаВо"
+                                        class="footer__menu__img"><span>ЧаВо</span></a></li>
+                            <li class="footer__menu__item_right"><a href="favourites.html" class="footer__menu__link_right"><img
+                                        src="img/like.svg" alt="like" class="footer__menu__img"></a></li>
+                            <li class="footer__menu__item_right"><a href="order.html" class="footer__menu__link_right"><img
+                                        src="img/cart.svg" alt="cart" class="footer__menu__img"></a></li>
+                            <li class="footer__menu__item_right"><a href="#" class="footer__menu__link_right"><img
+                                        src="img/user.svg" alt="user" class="footer__menu__img"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-types">
+                <div class="payment-types__title">
+                    ПРИНИМАЕМ К ОПЛАТЕ
+                </div>
+                <div class="payment-types__main">
+                    <img src="img/QIWI_logo.svg" alt="">
+                    <img src="img/СБП_логотип.svg" alt="">
+                    <img src="img/Mir-logo.SVG.svg" alt="">
+                    <img src="img/Mastercard-logo.svg" alt="">
+                    <img src="img/Visa_2021.svg" alt="">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        $('.accordion').accordion({
+            collapsible: true,
+            active: true,
+            heightStyle: 'content',
+            header: '> .accordion-item > .accordion-header'
+        });
+    </script>
+    <script>
+        $(function () {
+            $('#slider').slider({
+                range: true,
+                min: 2500,
+                max: 19999,
+                values: ['5000', '11000'],
+                slide: function (event, ui) {
+                    $('#min').val(ui.values[0]);
+                    $('#max').val(ui.values[1]);
+                }
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

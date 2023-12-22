@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Избранное</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__nav-menu">
+                    <div class="header__logo_wrapper">
+                        <a class="header__logo" href="#">
+                            <img class="logo__desctop" src="img/logo.svg" alt="logo">
+                            <img class="logo__mobile" src="img/logo_mobile.svg" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="catalog.html" class="menu__link"><img src="img/catalog.svg" alt="Каталог"
+                                    class="menu__img"><span>Каталог</span></a></li>
+                        <li class="menu__item"><a href="index.html" class="menu__link"><img src="img/home.svg" alt="Главная"
+                                    class="menu__img"><span>Главная</span></a></li>
+                        <li class="menu__item"><a href="husky.html" class="menu__link"><img src="img/husky_ico.svg" alt="Хаски"
+                            class="menu__img"><span>Хаски</span></a></li>
+                        <li class="menu__item"><a href="about.html" class="menu__link"><img src="img/about.svg" alt="О нас"
+                                    class="menu__img"><span>О нас</span></a></li>
+                        <li class="menu__item"><a href="question.html" class="menu__link"><img src="img/question.svg" alt="ЧаВо"
+                                    class="menu__img"><span>ЧаВо</span></a></li>
+                        <li class="menu__item_right"><a href="favourites.html" class="menu__link_right"><img src="img/like.svg"
+                                    alt="like" class="menu__img"></a></li>
+                        <li class="menu__item_right"><a href="order.html" class="menu__link_right"><img src="img/cart.svg"
+                                    alt="cart" class="menu__img"></a></li>
+                        <li class="menu__item_right"><a href="#" class="menu__link_right"><img src="img/user.svg"
+                                    alt="user" class="menu__img"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="favourites">
+                <div class="favourites__header">
+                    <div class="favourites__title">
+                        ИЗБРАННОЕ
+                    </div>
+                </div>
+                <div class="favourites__main">
+                    <div class="product__list">
+                        <div class="product__item">
+                            <div class="product__item__wrap">
+                                <div class="product__image">
+                                    <img src="img/product1.png" alt="Продукт">
+                                </div>
+                                <div class="product__title">
+                                    Наименование карточки товара
+                                </div>
+                                <div class="product__article">
+                                    (Артикул товара)
+                                </div>
+                                <div class="price__wrapper">
+                                    <div class="product__price">
+                                        12 180 ₽
+                                    </div>
+                                    <div class="product__delete">
+                                        <a class="product__delete__link" href="">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.49781 0H9.62062C11.8519 0 13.125 1.26 13.125 3.49781V9.62719C13.125 11.8519 11.8584 13.125 9.62719 13.125H3.49781C1.26 13.125 0 11.8519 0 9.62719V3.49781C0 1.26 1.26 0 3.49781 0ZM4.04469 7.09594H8.855C9.15688 7.08938 9.39969 6.84656 9.39969 6.54469C9.39969 6.24281 9.15688 6 8.855 6H4.04469C3.90031 6 3.7625 6.05906 3.6575 6.1575C3.55906 6.2625 3.5 6.39966 3.5 6.54469C3.5 6.84656 3.74281 7.08938 4.04469 7.09594Z"
+                                                    fill="#9F9F9F" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__item__wrap">
+                                <div class="product__image">
+                                    <img src="img/product2.png" alt="Продукт">
+                                </div>
+                                <div class="product__title">
+                                    Наименование карточки товара
+                                </div>
+                                <div class="product__article">
+                                    (Артикул товара)
+                                </div>
+                                <div class="price__wrapper">
+                                    <div class="product__price">
+                                        12 180 ₽
+                                    </div>
+                                    <div class="product__delete">
+                                        <a class="product__delete__link" href="">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.49781 0H9.62062C11.8519 0 13.125 1.26 13.125 3.49781V9.62719C13.125 11.8519 11.8584 13.125 9.62719 13.125H3.49781C1.26 13.125 0 11.8519 0 9.62719V3.49781C0 1.26 1.26 0 3.49781 0ZM4.04469 7.09594H8.855C9.15688 7.08938 9.39969 6.84656 9.39969 6.54469C9.39969 6.24281 9.15688 6 8.855 6H4.04469C3.90031 6 3.7625 6.05906 3.6575 6.1575C3.55906 6.2625 3.5 6.39966 3.5 6.54469C3.5 6.84656 3.74281 7.08938 4.04469 7.09594Z"
+                                                    fill="#9F9F9F" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__item__wrap">
+                                <div class="product__image">
+                                    <img src="img/product3.png" alt="Продукт">
+                                </div>
+                                <div class="product__title">
+                                    Наименование карточки товара
+                                </div>
+                                <div class="product__article">
+                                    (Артикул товара)
+                                </div>
+                                <div class="price__wrapper">
+                                    <div class="product__price">
+                                        12 180 ₽
+                                    </div>
+                                    <div class="product__delete">
+                                        <a class="product__delete__link" href="">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.49781 0H9.62062C11.8519 0 13.125 1.26 13.125 3.49781V9.62719C13.125 11.8519 11.8584 13.125 9.62719 13.125H3.49781C1.26 13.125 0 11.8519 0 9.62719V3.49781C0 1.26 1.26 0 3.49781 0ZM4.04469 7.09594H8.855C9.15688 7.08938 9.39969 6.84656 9.39969 6.54469C9.39969 6.24281 9.15688 6 8.855 6H4.04469C3.90031 6 3.7625 6.05906 3.6575 6.1575C3.55906 6.2625 3.5 6.39966 3.5 6.54469C3.5 6.84656 3.74281 7.08938 4.04469 7.09594Z"
+                                                    fill="#9F9F9F" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__item__wrap">
+                                <div class="product__image">
+                                    <img src="img/product4.png" alt="Продукт">
+                                </div>
+                                <div class="product__title">
+                                    Наименование карточки товара
+                                </div>
+                                <div class="product__article">
+                                    (Артикул товара)
+                                </div>
+                                <div class="price__wrapper">
+                                    <div class="product__price">
+                                        12 180 ₽
+                                    </div>
+                                    <div class="product__delete">
+                                        <a class="product__delete__link" href="">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.49781 0H9.62062C11.8519 0 13.125 1.26 13.125 3.49781V9.62719C13.125 11.8519 11.8584 13.125 9.62719 13.125H3.49781C1.26 13.125 0 11.8519 0 9.62719V3.49781C0 1.26 1.26 0 3.49781 0ZM4.04469 7.09594H8.855C9.15688 7.08938 9.39969 6.84656 9.39969 6.54469C9.39969 6.24281 9.15688 6 8.855 6H4.04469C3.90031 6 3.7625 6.05906 3.6575 6.1575C3.55906 6.2625 3.5 6.39966 3.5 6.54469C3.5 6.84656 3.74281 7.08938 4.04469 7.09594Z"
+                                                    fill="#9F9F9F" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__item__wrap">
+                                <div class="product__image">
+                                    <img src="img/product4.png" alt="Продукт">
+                                </div>
+                                <div class="product__title">
+                                    Наименование карточки товара
+                                </div>
+                                <div class="product__article">
+                                    (Артикул товара)
+                                </div>
+                                <div class="price__wrapper">
+                                    <div class="product__price">
+                                        12 180 ₽
+                                    </div>
+                                    <div class="product__delete">
+                                        <a class="product__delete__link" href="">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.49781 0H9.62062C11.8519 0 13.125 1.26 13.125 3.49781V9.62719C13.125 11.8519 11.8584 13.125 9.62719 13.125H3.49781C1.26 13.125 0 11.8519 0 9.62719V3.49781C0 1.26 1.26 0 3.49781 0ZM4.04469 7.09594H8.855C9.15688 7.08938 9.39969 6.84656 9.39969 6.54469C9.39969 6.24281 9.15688 6 8.855 6H4.04469C3.90031 6 3.7625 6.05906 3.6575 6.1575C3.55906 6.2625 3.5 6.39966 3.5 6.54469C3.5 6.84656 3.74281 7.08938 4.04469 7.09594Z"
+                                                    fill="#9F9F9F" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__item__wrap">
+                                <div class="product__image">
+                                    <img src="img/product4.png" alt="Продукт">
+                                </div>
+                                <div class="product__title">
+                                    Наименование карточки товара
+                                </div>
+                                <div class="product__article">
+                                    (Артикул товара)
+                                </div>
+                                <div class="price__wrapper">
+                                    <div class="product__price">
+                                        12 180 ₽
+                                    </div>
+                                    <div class="product__delete">
+                                        <a class="product__delete__link" href="">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.49781 0H9.62062C11.8519 0 13.125 1.26 13.125 3.49781V9.62719C13.125 11.8519 11.8584 13.125 9.62719 13.125H3.49781C1.26 13.125 0 11.8519 0 9.62719V3.49781C0 1.26 1.26 0 3.49781 0ZM4.04469 7.09594H8.855C9.15688 7.08938 9.39969 6.84656 9.39969 6.54469C9.39969 6.24281 9.15688 6 8.855 6H4.04469C3.90031 6 3.7625 6.05906 3.6575 6.1575C3.55906 6.2625 3.5 6.39966 3.5 6.54469C3.5 6.84656 3.74281 7.08938 4.04469 7.09594Z"
+                                                    fill="#9F9F9F" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__item__wrap">
+                                <div class="product__image">
+                                    <img src="img/product4.png" alt="Продукт">
+                                </div>
+                                <div class="product__title">
+                                    Наименование карточки товара
+                                </div>
+                                <div class="product__article">
+                                    (Артикул товара)
+                                </div>
+                                <div class="price__wrapper">
+                                    <div class="product__price">
+                                        12 180 ₽
+                                    </div>
+                                    <div class="product__delete">
+                                        <a class="product__delete__link" href="">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.49781 0H9.62062C11.8519 0 13.125 1.26 13.125 3.49781V9.62719C13.125 11.8519 11.8584 13.125 9.62719 13.125H3.49781C1.26 13.125 0 11.8519 0 9.62719V3.49781C0 1.26 1.26 0 3.49781 0ZM4.04469 7.09594H8.855C9.15688 7.08938 9.39969 6.84656 9.39969 6.54469C9.39969 6.24281 9.15688 6 8.855 6H4.04469C3.90031 6 3.7625 6.05906 3.6575 6.1575C3.55906 6.2625 3.5 6.39966 3.5 6.54469C3.5 6.84656 3.74281 7.08938 4.04469 7.09594Z"
+                                                    fill="#9F9F9F" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__item">
+                            <div class="product__item__wrap">
+                                <div class="product__image">
+                                    <img src="img/product4.png" alt="Продукт">
+                                </div>
+                                <div class="product__title">
+                                    Наименование карточки товара
+                                </div>
+                                <div class="product__article">
+                                    (Артикул товара)
+                                </div>
+                                <div class="price__wrapper">
+                                    <div class="product__price">
+                                        12 180 ₽
+                                    </div>
+                                    <div class="product__delete">
+                                        <a class="product__delete__link" href="">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3.49781 0H9.62062C11.8519 0 13.125 1.26 13.125 3.49781V9.62719C13.125 11.8519 11.8584 13.125 9.62719 13.125H3.49781C1.26 13.125 0 11.8519 0 9.62719V3.49781C0 1.26 1.26 0 3.49781 0ZM4.04469 7.09594H8.855C9.15688 7.08938 9.39969 6.84656 9.39969 6.54469C9.39969 6.24281 9.15688 6 8.855 6H4.04469C3.90031 6 3.7625 6.05906 3.6575 6.1575C3.55906 6.2625 3.5 6.39966 3.5 6.54469C3.5 6.84656 3.74281 7.08938 4.04469 7.09594Z"
+                                                    fill="#9F9F9F" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-navigation">
+                <div class="footer-navigation__container">
+                    <div class="footer-navigation__nav-menu">
+                        <div class="footer-navigation__logo_wrapper">
+                            <a class="footer-navigation__logo" href="#">
+                                <img class="footer_logo__desctop" src="img/footer_logo.svg" alt="logo">
+                                <img class="footer_logo__mobile" src="img/logo_mobile.svg" alt="logo">
+                            </a>
+                        </div>
+                        <ul class="footer__menu__list">
+                            <li class="footer__menu__item"><a href="catalog.html" class="footer__menu__link"><img
+                                        src="img/catalog.svg" alt="Каталог"
+                                        class="footer__menu__img"><span>Каталог</span></a></li>
+                            <li class="footer__menu__item"><a href="index.html" class="footer__menu__link"><img
+                                        src="img/home.svg" alt="Главная"
+                                        class="footer__menu__img"><span>Главная</span></a></li>
+                            <li class="footer__menu__item"><a href="husky.html" class="footer__menu__link"><img
+                                        src="img/husky_ico.svg" alt="Хаски"
+                                        class="footer__menu__img"><span>Хаски</span></a></li>
+                            <li class="footer__menu__item"><a href="about.html" class="footer__menu__link"><img
+                                        src="img/about.svg" alt="О нас" class="footer__menu__img"><span>О нас</span></a>
+                            </li>
+                            <li class="footer__menu__item"><a href="question.html" class="footer__menu__link"><img
+                                        src="img/question.svg" alt="ЧаВо"
+                                        class="footer__menu__img"><span>ЧаВо</span></a></li>
+                            <li class="footer__menu__item_right"><a href="favourites.html" class="footer__menu__link_right"><img
+                                        src="img/like.svg" alt="like" class="footer__menu__img"></a></li>
+                            <li class="footer__menu__item_right"><a href="order.html" class="footer__menu__link_right"><img
+                                        src="img/cart.svg" alt="cart" class="footer__menu__img"></a></li>
+                            <li class="footer__menu__item_right"><a href="#" class="footer__menu__link_right"><img
+                                        src="img/user.svg" alt="user" class="footer__menu__img"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-types">
+                <div class="payment-types__title">
+                    ПРИНИМАЕМ К ОПЛАТЕ
+                </div>
+                <div class="payment-types__main">
+                    <img src="img/QIWI_logo.svg" alt="">
+                    <img src="img/СБП_логотип.svg" alt="">
+                    <img src="img/Mir-logo.SVG.svg" alt="">
+                    <img src="img/Mastercard-logo.svg" alt="">
+                    <img src="img/Visa_2021.svg" alt="">
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

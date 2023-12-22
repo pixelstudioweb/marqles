@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__nav-menu">
+                    <div class="header__logo_wrapper">
+                        <a class="header__logo" href="#">
+                            <img class="logo__desctop" src="img/logo.svg" alt="logo">
+                            <img class="logo__mobile" src="img/logo_mobile.svg" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="catalog.html" class="menu__link"><img src="img/catalog.svg" alt="Каталог"
+                                    class="menu__img"><span>Каталог</span></a></li>
+                        <li class="menu__item"><a href="index.html" class="menu__link"><img src="img/home.svg" alt="Главная"
+                                    class="menu__img"><span>Главная</span></a></li>
+                        <li class="menu__item"><a href="husky.html" class="menu__link"><img src="img/husky_ico.svg" alt="Хаски"
+                            class="menu__img"><span>Хаски</span></a></li>
+                        <li class="menu__item"><a href="about.html" class="menu__link"><img src="img/about.svg" alt="О нас"
+                                    class="menu__img"><span>О нас</span></a></li>
+                        <li class="menu__item"><a href="question.html" class="menu__link"><img src="img/question.svg" alt="ЧаВо"
+                                    class="menu__img"><span>ЧаВо</span></a></li>
+                        <li class="menu__item_right"><a href="favourites.html" class="menu__link_right"><img src="img/like.svg"
+                                    alt="like" class="menu__img"></a></li>
+                        <li class="menu__item_right"><a href="order.html" class="menu__link_right"><img src="img/cart.svg"
+                                    alt="cart" class="menu__img"></a></li>
+                        <li class="menu__item_right"><a href="#" class="menu__link_right"><img src="img/user.svg"
+                                    alt="user" class="menu__img"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="order">
+                <div class="order__container">
+                    <div class="favourites__header">
+                        <div class="favourites__title">
+                            ОФОРМЛЕНИЕ ЗАКАЗА
+                        </div>
+                    </div>
+                    <div class="order__main">
+                        <div class="order__left">
+                            <div class="order__form">
+                                <div class="order__form__title">
+                                    получатель
+                                </div>
+                                <div class="data__form">
+                                    <form action="">
+                                        <div class="data__form__left">
+                                            <div class="form__item">
+                                                <label for="recipient-name">Имя</label>
+                                                <input type="text" id="recipient-name" placeholder="Иван"
+                                                    name="recipient-name" required>
+                                            </div>
+                                            <div class="form__item">
+                                                <label for="recipient-last-name">Фамилия</label>
+                                                <input type="text" id="recipient-last-name" placeholder="Иванов"
+                                                    name="recipient-last-name" required>
+                                            </div>
+                                            <div class="form__item">
+                                                <label for="recipient-middle-name">Отчество</label>
+                                                <input type="text" id="recipient-middle-name" placeholder="Иванович"
+                                                    name="recipient-middle-name">
+                                            </div>
+                                        </div>
+                                        <div class="data__form__right">
+                                            <div class="form__item">
+                                                <label for="recipient-phone">Номер телефона:</label>
+                                                <input type="tel" id="recipient-phone" placeholder="+7 (923) 123-12-31"
+                                                    name="recipient-phone" required>
+                                            </div>
+                                            <div class="form__item">
+                                                <label for="recipient-email">Почта:</label>
+                                                <input type="email" id="recipient-email" placeholder="gmail@gmail.com"
+                                                    name="recipient-email" required>
+                                            </div>
+                                            <div class="form__item">
+                                                <label for="order-comment">Комментарий к заказу:</label>
+                                                <input type="text" id="order-comment" placeholder=""
+                                                    name="order-comment">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="order__form__title">
+                                    Адрес
+                                </div>
+                                <div class="address__form">
+                                    <form action="">
+                                        <div class="address__form__left">
+                                            <div class="form__item">
+                                                <label for="city">Город</label>
+                                                <input type="text" id="city" placeholder="Новосибирск" name="city"
+                                                    required>
+                                            </div>
+                                            <div class="form__item">
+                                                <label for="street">Улица</label>
+                                                <input type="text" id="street" placeholder="Ивановская" name="street"
+                                                    required>
+                                            </div>
+                                            <div class="form__item">
+                                                <label for="house-number">Номер дома</label>
+                                                <input type="text" id="house-number" placeholder="85А"
+                                                    name="house-number" required>
+                                            </div>
+                                            <div class="form__item">
+                                                <label for="entrance">Подъезд</label>
+                                                <input type="text" id="entrance" placeholder="4Б" name="entrance">
+                                            </div>
+                                        </div>
+                                        <div class="address__form__right">
+                                            <div class="form__item">
+                                                <label for="address-comments">Комментарии к адресу</label>
+                                                <input type="text" id="address-comments" name="address-comments">
+                                            </div>
+                                            <div class="form__item">
+                                                <label for="floor">Этаж</label>
+                                                <input type="text" id="floor" placeholder="15" name="floor">
+                                            </div>
+                                            <div class="form__item">
+                                                <label for="apartment">Квартира</label>
+                                                <input type="text" id="apartment" placeholder="758Б" name="apartment">
+                                            </div>
+                                            <div class="form__item">
+                                                <label for="intercom">Домофон</label>
+                                                <input type="text" id="intercom" placeholder="152" name="intercom">
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="button__form__wrapper">
+                                        <button id="submit-button" type="button">Сохранить</button>
+                                        <div class="button__form__text">
+                                            После оплаты, с Вами свяжется наш менеджер
+                                            и обговорит удобные варианты доставки.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button__form__text button__form__text__mobile">
+                                После оплаты, с Вами свяжется наш менеджер
+                                и обговорит удобные варианты доставки.
+                            </div>
+                            <div class="your__order__mobile">
+                                <div class="your__order">
+                                    <div class="your__order__header">
+                                        <div class="your__order__title">
+                                            ваш заказ
+                                        </div>
+                                        <a class="your__order__settings" href="">
+                                            Изменить
+                                        </a>
+                                    </div>
+                                    <div class="order__product__list">
+                                        <div class="order__product__item">
+                                            <span class="order__product__name">Название товара</span>
+                                            <span class="order__product__quantity">2</span>
+                                            <span class="order__product__price">10 980 ₽</span>
+                                        </div>
+                                        <div class="order__product__item">
+                                            <span class="order__product__name">Название товара</span>
+                                            <span class="order__product__quantity">1</span>
+                                            <span class="order__product__price">10 980 ₽</span>
+                                        </div>
+                                        <div class="order__product__item">
+                                            <span class="order__product__name">Название товара</span>
+                                            <span class="order__product__quantity">1</span>
+                                            <span class="order__product__price">10 980 ₽</span>
+                                        </div>
+                                        <div class="order__product__item">
+                                            <span class="order__product__name">Название товара</span>
+                                            <span class="order__product__quantity">1</span>
+                                            <span class="order__product__price">10 980 ₽</span>
+                                        </div>
+                                        <div class="order__product__item">
+                                            <span class="order__product__name">Название товара</span>
+                                            <span class="order__product__quantity">1</span>
+                                            <span class="order__product__price">10 980 ₽</span>
+                                        </div>
+                                        <div class="order__product__item">
+                                            <span class="order__product__name">Название товара</span>
+                                            <span class="order__product__quantity">1</span>
+                                            <span class="order__product__price">10 980 ₽</span>
+                                        </div>
+                                    </div>
+                                    <button class="order__show__all" id="show-all-button">Показать все...</button>
+                                    <div class="line"></div>
+                                    <div class="order__total__price">
+                                        <div class="totla__price__subtitle">
+                                            ИТОГО
+                                        </div>
+                                        <div class="total__price__price">
+                                            255 922 ₽
+                                        </div>
+                                    </div>
+                                    <div class="paymet__button__wrap">
+                                        <a class="paymet__button" href="">
+                                            Перейти к оплате
+                                        </a>
+                                    </div>
+
+                                    <div class="order__offerta">
+                                        <input type="checkbox" class="custom-checkbox" id="oferta" name="oferta"
+                                            value="yes">
+                                        <label for="oferta">Вы соглашаетесь с <a class="offerta__link" href="">офертой
+                                                и политикой конфиденциальности</a></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user__oreder">
+                                <div class="order__form__title">
+                                    ВАШ ЗАКАЗ
+                                </div>
+                                <div class="user__oreder__content">
+                                    <div class="content__container">
+                                        <div class="user__oreder__item">
+                                            <div class="user__oreder__img">
+                                                <img src="img/order_item.svg" alt="">
+                                            </div>
+                                            <div class="user__oreder__info">
+                                                <div class="user__oreder__title">
+                                                    Наименование карточки товара
+                                                </div>
+                                                <div class="user__oreder__article">
+                                                    (Артикул товара)
+                                                </div>
+                                                <div class="user__oreder__price">
+                                                    12 180 ₽
+                                                </div>
+                                                <div class="user__order__wrap">
+                                                    <form id='myform2' method='POST' action='#'>
+                                                        <input type='button' value='-' class='qtyminus' field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus' field='quantity' />
+                                                    </form>
+                                                    <a class="order__delete" href="">
+                                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M15.5303 20.0973H6.39525C5.38621 20.0973 4.56823 19.2794 4.56823 18.2703V6.3947H2.74121V4.56768H6.39525V3.65417C6.39525 2.64513 7.21323 1.82715 8.22227 1.82715H13.7033C14.7124 1.82715 15.5303 2.64513 15.5303 3.65417V4.56768H19.1844V6.3947H17.3574V18.2703C17.3574 19.2794 16.5394 20.0973 15.5303 20.0973ZM6.39525 6.3947V18.2703H15.5303V6.3947H6.39525ZM8.22227 3.65417V4.56768H13.7033V3.65417H8.22227ZM13.7033 16.4433H11.8763V8.22172H13.7033V16.4433ZM10.0493 16.4433H8.22227V8.22172H10.0493V16.4433Z"
+                                                                fill="#BBBBBB" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="user__oreder__item">
+                                            <div class="user__oreder__img">
+                                                <img src="img/order_item.svg" alt="">
+                                            </div>
+                                            <div class="user__oreder__info">
+                                                <div class="user__oreder__title">
+                                                    Наименование карточки товара
+                                                </div>
+                                                <div class="user__oreder__article">
+                                                    (Артикул товара)
+                                                </div>
+                                                <div class="user__oreder__price">
+                                                    12 180 ₽
+                                                </div>
+                                                <div class="user__order__wrap">
+                                                    <form id='myform2' method='POST' action='#'>
+                                                        <input type='button' value='-' class='qtyminus' field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus' field='quantity' />
+                                                    </form>
+                                                    <a class="order__delete" href="">
+                                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M15.5303 20.0973H6.39525C5.38621 20.0973 4.56823 19.2794 4.56823 18.2703V6.3947H2.74121V4.56768H6.39525V3.65417C6.39525 2.64513 7.21323 1.82715 8.22227 1.82715H13.7033C14.7124 1.82715 15.5303 2.64513 15.5303 3.65417V4.56768H19.1844V6.3947H17.3574V18.2703C17.3574 19.2794 16.5394 20.0973 15.5303 20.0973ZM6.39525 6.3947V18.2703H15.5303V6.3947H6.39525ZM8.22227 3.65417V4.56768H13.7033V3.65417H8.22227ZM13.7033 16.4433H11.8763V8.22172H13.7033V16.4433ZM10.0493 16.4433H8.22227V8.22172H10.0493V16.4433Z"
+                                                                fill="#BBBBBB" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user__oreder__item">
+                                            <div class="user__oreder__img">
+                                                <img src="img/order_item.svg" alt="">
+                                            </div>
+                                            <div class="user__oreder__info">
+                                                <div class="user__oreder__title">
+                                                    Наименование карточки товара
+                                                </div>
+                                                <div class="user__oreder__article">
+                                                    (Артикул товара)
+                                                </div>
+                                                <div class="user__oreder__price">
+                                                    12 180 ₽
+                                                </div>
+                                                <div class="user__order__wrap">
+                                                    <form id='myform2' method='POST' action='#'>
+                                                        <input type='button' value='-' class='qtyminus' field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus' field='quantity' />
+                                                    </form>
+                                                    <a class="order__delete" href="">
+                                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M15.5303 20.0973H6.39525C5.38621 20.0973 4.56823 19.2794 4.56823 18.2703V6.3947H2.74121V4.56768H6.39525V3.65417C6.39525 2.64513 7.21323 1.82715 8.22227 1.82715H13.7033C14.7124 1.82715 15.5303 2.64513 15.5303 3.65417V4.56768H19.1844V6.3947H17.3574V18.2703C17.3574 19.2794 16.5394 20.0973 15.5303 20.0973ZM6.39525 6.3947V18.2703H15.5303V6.3947H6.39525ZM8.22227 3.65417V4.56768H13.7033V3.65417H8.22227ZM13.7033 16.4433H11.8763V8.22172H13.7033V16.4433ZM10.0493 16.4433H8.22227V8.22172H10.0493V16.4433Z"
+                                                                fill="#BBBBBB" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user__oreder__item">
+                                            <div class="user__oreder__img">
+                                                <img src="img/order_item.svg" alt="">
+                                            </div>
+                                            <div class="user__oreder__info">
+                                                <div class="user__oreder__title">
+                                                    Наименование карточки товара
+                                                </div>
+                                                <div class="user__oreder__article">
+                                                    (Артикул товара)
+                                                </div>
+                                                <div class="user__oreder__price">
+                                                    12 180 ₽
+                                                </div>
+                                                <div class="user__order__wrap">
+                                                    <form id='myform2' method='POST' action='#'>
+                                                        <input type='button' value='-' class='qtyminus' field='quantity' />
+                                                        <input type='text' name='quantity' value='0' class='qty' />
+                                                        <input type='button' value='+' class='qtyplus' field='quantity' />
+                                                    </form>
+                                                    <a class="order__delete" href="">
+                                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M15.5303 20.0973H6.39525C5.38621 20.0973 4.56823 19.2794 4.56823 18.2703V6.3947H2.74121V4.56768H6.39525V3.65417C6.39525 2.64513 7.21323 1.82715 8.22227 1.82715H13.7033C14.7124 1.82715 15.5303 2.64513 15.5303 3.65417V4.56768H19.1844V6.3947H17.3574V18.2703C17.3574 19.2794 16.5394 20.0973 15.5303 20.0973ZM6.39525 6.3947V18.2703H15.5303V6.3947H6.39525ZM8.22227 3.65417V4.56768H13.7033V3.65417H8.22227ZM13.7033 16.4433H11.8763V8.22172H13.7033V16.4433ZM10.0493 16.4433H8.22227V8.22172H10.0493V16.4433Z"
+                                                                fill="#BBBBBB" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order__delete__button">
+                                        <a href="">
+                                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M20.1485 26.0732H8.29717C6.98811 26.0732 5.92691 25.012 5.92691 23.703V8.29627H3.55664V5.926H8.29717V4.74087C8.29717 3.43181 9.35837 2.37061 10.6674 2.37061H17.7782C19.0873 2.37061 20.1485 3.43181 20.1485 4.74087V5.926H24.889V8.29627H22.5188V23.703C22.5188 25.012 21.4576 26.0732 20.1485 26.0732ZM8.29717 8.29627V23.703H20.1485V8.29627H8.29717ZM10.6674 4.74087V5.926H17.7782V4.74087H10.6674ZM17.7782 21.3327H15.408V10.6665H17.7782V21.3327ZM13.0377 21.3327H10.6674V10.6665H13.0377V21.3327Z"
+                                                    fill="#BBBBBB" />
+                                            </svg>
+                                            Очистить корзину
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__right">
+                            <div class="your__order">
+                                <div class="your__order__header">
+                                    <div class="your__order__title">
+                                        ваш заказ
+                                    </div>
+                                    <a class="your__order__settings" href="">
+                                        Изменить
+                                    </a>
+                                </div>
+                                <div class="order__product__list">
+                                    <div class="order__product__item">
+                                        <span class="order__product__name">Название товара</span>
+                                        <span class="order__product__quantity">2</span>
+                                        <span class="order__product__price">10 980 ₽</span>
+                                    </div>
+                                    <div class="order__product__item">
+                                        <span class="order__product__name">Название товара</span>
+                                        <span class="order__product__quantity">1</span>
+                                        <span class="order__product__price">10 980 ₽</span>
+                                    </div>
+                                    <div class="order__product__item">
+                                        <span class="order__product__name">Название товара</span>
+                                        <span class="order__product__quantity">1</span>
+                                        <span class="order__product__price">10 980 ₽</span>
+                                    </div>
+                                    <div class="order__product__item">
+                                        <span class="order__product__name">Название товара</span>
+                                        <span class="order__product__quantity">1</span>
+                                        <span class="order__product__price">10 980 ₽</span>
+                                    </div>
+                                    <!-- <div class="order__product__item">
+                                        <span class="order__product__name">Название товара</span>
+                                        <span class="order__product__quantity">1</span>
+                                        <span class="order__product__price">10 980 ₽</span>
+                                    </div>
+                                    <div class="order__product__item">
+                                        <span class="order__product__name">Название товара</span>
+                                        <span class="order__product__quantity">1</span>
+                                        <span class="order__product__price">10 980 ₽</span>
+                                    </div> -->
+                                </div>
+                                <button class="order__show__all" id="show-all-button">Показать все...</button>
+                                <div class="line"></div>
+                                <div class="order__total__price">
+                                    <div class="totla__price__subtitle">
+                                        ИТОГО
+                                    </div>
+                                    <div class="total__price__price">
+                                        255 922 ₽
+                                    </div>
+                                </div>
+
+                                <div class="paymet__button__wrap">
+                                    <a class="paymet__button" href="">
+                                        Перейти к оплате
+                                    </a>
+                                </div>
+                                <div class="order__offerta">
+                                    <input type="checkbox" class="custom-checkbox" id="oferta" name="oferta"
+                                        value="yes">
+                                    <label for="oferta">Вы соглашаетесь с <a class="offerta__link" href="">офертой
+                                            и политикой конфиденциальности</a></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-navigation">
+                <div class="footer-navigation__container">
+                    <div class="footer-navigation__nav-menu">
+                        <div class="footer-navigation__logo_wrapper">
+                            <a class="footer-navigation__logo" href="#">
+                                <img class="footer_logo__desctop" src="img/footer_logo.svg" alt="logo">
+                                <img class="footer_logo__mobile" src="img/logo_mobile.svg" alt="logo">
+                            </a>
+                        </div>
+                        <ul class="footer__menu__list">
+                            <li class="footer__menu__item"><a href="catalog.html" class="footer__menu__link"><img
+                                        src="img/catalog.svg" alt="Каталог"
+                                        class="footer__menu__img"><span>Каталог</span></a></li>
+                            <li class="footer__menu__item"><a href="index.html" class="footer__menu__link"><img
+                                        src="img/home.svg" alt="Главная"
+                                        class="footer__menu__img"><span>Главная</span></a></li>
+                            <li class="footer__menu__item"><a href="husky.html" class="footer__menu__link"><img
+                                        src="img/husky_ico.svg" alt="Хаски"
+                                        class="footer__menu__img"><span>Хаски</span></a></li>
+                            <li class="footer__menu__item"><a href="about.html" class="footer__menu__link"><img
+                                        src="img/about.svg" alt="О нас" class="footer__menu__img"><span>О нас</span></a>
+                            </li>
+                            <li class="footer__menu__item"><a href="question.html" class="footer__menu__link"><img
+                                        src="img/question.svg" alt="ЧаВо"
+                                        class="footer__menu__img"><span>ЧаВо</span></a></li>
+                            <li class="footer__menu__item_right"><a href="favourites.html" class="footer__menu__link_right"><img
+                                        src="img/like.svg" alt="like" class="footer__menu__img"></a></li>
+                            <li class="footer__menu__item_right"><a href="order.html" class="footer__menu__link_right"><img
+                                        src="img/cart.svg" alt="cart" class="footer__menu__img"></a></li>
+                            <li class="footer__menu__item_right"><a href="#" class="footer__menu__link_right"><img
+                                        src="img/user.svg" alt="user" class="footer__menu__img"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-types">
+                <div class="payment-types__title">
+                    ПРИНИМАЕМ К ОПЛАТЕ
+                </div>
+                <div class="payment-types__main">
+                    <img src="img/QIWI_logo.svg" alt="">
+                    <img src="img/СБП_логотип.svg" alt="">
+                    <img src="img/Mir-logo.SVG.svg" alt="">
+                    <img src="img/Mastercard-logo.svg" alt="">
+                    <img src="img/Visa_2021.svg" alt="">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- <script>
+        $(document).ready(function () {
+            const products = $(".order__product__item");
+            const showAllButton = $("#show-all-button");
+            const initialDisplayCount = 4;
+            products.slice(initialDisplayCount).hide();
+            showAllButton.click(function () {
+                products.show();
+                showAllButton.hide();
+            });
+        });
+    </script> -->
+    <script>
+        $("#submit-button").click(function () {
+            const recipientName = $("#recipient-name").val();
+            const recipientLastName = $("#recipient-last-name").val();
+            const recipientMiddleName = $("#recipient-middle-name").val();
+            const recipientPhone = $("#recipient-phone").val();
+            const recipientEmail = $("#recipient-email").val();
+            const orderComment = $("#order-comment").val();
+
+            const city = $("#city").val();
+            const street = $("#street").val();
+            const houseNumber = $("#house-number").val();
+            const entrance = $("#entrance").val();
+            const addressComments = $("#address-comments").val();
+            const floor = $("#floor").val();
+            const apartment = $("#apartment").val();
+            const intercom = $("#intercom").val();
+
+            const data = {
+                recipient: {
+                    name: recipientName,
+                    lastName: recipientLastName,
+                    middleName: recipientMiddleName,
+                    phone: recipientPhone,
+                    email: recipientEmail,
+                    comment: orderComment
+                },
+                address: {
+                    city: city,
+                    street: street,
+                    houseNumber: houseNumber,
+                    entrance: entrance,
+                    comments: addressComments,
+                    floor: floor,
+                    apartment: apartment,
+                    intercom: intercom
+                }
+            };
+
+
+            $.ajax({
+                type: "POST",
+                url: "URL_для_обработки_данных",
+                data: JSON.stringify(data),
+                contentType: "application/json",
+                success: function (response) {
+
+                }
+            });
+        });
+    </script>
+    <script type='text/javascript'>
+        jQuery(document).ready(function () {
+
+            $('.qtyplus').click(function (e) {
+
+                e.preventDefault();
+ 
+                fieldName = $(this).attr('field');
+                console.log($(this).parent());
+
+                var currentVal = parseInt($(this).parent().find('input[name=' + fieldName + ']').val());
+
+                if (!isNaN(currentVal)) {
+         
+                    $(this).parent().find('input[name=' + fieldName + ']').val(currentVal + 1);
+                } else {
+      
+                    $(this).parent().find('input[name=' + fieldName + ']').val(0);
+                }
+            });
+
+            $(".qtyminus").click(function (e) {
+    
+                e.preventDefault();
+  
+                fieldName = $(this).attr('field');
+     
+                var currentVal = parseInt($(this).parent().find('input[name=' + fieldName + ']').val());
+      
+                if (!isNaN(currentVal) && currentVal > 0) {
+           
+                    $(this).parent().find('input[name=' + fieldName + ']').val(currentVal - 1);
+                } else {
+            
+                    $(this).parent().find('input[name=' + fieldName + ']').val(0);
+                }
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

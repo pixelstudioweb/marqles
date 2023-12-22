@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Pragmatica';
+    src: url('PragmaticaCyrillic.woff2') format('woff2'),
+        url('PragmaticaCyrillic.woff') format('woff'),
+        url('PragmaticaCyrillic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
